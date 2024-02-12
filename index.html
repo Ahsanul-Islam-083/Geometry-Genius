@@ -64,20 +64,31 @@
                         </div>
                     </div>
                 </div>
-                <!-- Triangle card -->
+                <!-- Parallelogram card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-                            class="rounded-xl" />
+                        <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title text-3xl">Parallelogram</h2>
+                        <p class="text-2xl">Area (A) = b X h</p>
+                        <div>
+                            <!-- base -->
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" id="parallelogram-base"
+                                placeholder="b"><span class="mr-4 ml-2">cm</span>
+                            <!-- height -->
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" id="parallelogram-height"
+                                placeholder="h"><span class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="parallelogram-area"> </span> <span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions w-full">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Triangle card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -116,6 +127,7 @@
 
     <script src="script/triangleCalculate.js"></script>
     <script src="script/rectangleArea.js"></script>
+    <script src="script/parallelogramArea.js"></script>
 </body>
 
 </html>
